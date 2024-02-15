@@ -7,9 +7,29 @@
 }
 body {
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #A3B18A;
+  justify-content: center;
+  text-align: center;
 }
+
+@media (max-width: 600px) {
+  body {
+    flex-wrap: wrap;
+  }
+  #logoBar{
+    width: 100vw;
+    height: 60vh;
+  }
+  .galleryImage{
+    width: 40vw;
+    height: auto;
+  }
+}
+
 #staffGallery{
   width: 70vw;
+  flex-wrap: wrap;
   display: inherit;
 
 }
@@ -17,4 +37,22 @@ body {
   width: 100%;
   height: auto;
   height: 300px;
+}
+h1 {
+  color: #344E41;
+}
+
+.card {
+  background-color: #DAD7CD;
+  display: flex;
+  margin: 2em;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
